@@ -1,0 +1,17 @@
+{{#if success_msg}}
+<body onload="M.toast({html: '{{success_msg}}'})">
+
+</body>
+<!--<div class="alert alert-success alert-dismissible fade show" role="alert" >{{success_msg}}
+     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>-->
+{{/if}}
+
+{{#if error_msg}}
+<body onload="M.toast({html: '{{error_msg}}'})">
+    
+</body>
+
+{{/if}}
