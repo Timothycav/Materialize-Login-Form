@@ -1,15 +1,17 @@
 {{#if error}}
-<div> 
-{{error}}
+<div>
+   
+
+
+<body onload="M.toast({html: '{{error}}', displayLength: '2000', classes: 'rounded'})"></body>
 </div>
 
-
-
-  
 {{/if}}
 
 {{#each errors}}
-  <div>{{text}}</div>
+
+<body onload="M.toast({html: '{{text}}', displayLength: '2000', classes: 'rounded'})"></body>
+
 {{else}}
 
 {{/each}}
